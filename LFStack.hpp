@@ -25,8 +25,14 @@ public:
     T pop() {
         while (true) {
             Node<T> *return_node = try_pop();
-            if (return_node) return return_node->value;
-            else sleep(random() % 5);
+            if (return_node) {
+                T return_value = return_node->value;
+                delete return_node;
+                return return_value;
+            }
+            else {
+                sleep(random() % 5);
+            }
         }
     }
 
