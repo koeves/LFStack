@@ -1,9 +1,9 @@
 #include <atomic>
 #include <unistd.h>
 #include <iostream>
-#include "Node.hpp"
 
-template <class T> class LFStack {
+template <class T> 
+class LFStack {
     
 public:
     LFStack() : top(nullptr) {}
