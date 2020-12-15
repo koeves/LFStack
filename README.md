@@ -1,2 +1,2 @@
 # `LFStack<T>`
-Lock-free stack implementation in C++
+Lock-free stack datatype implemented in C++.
